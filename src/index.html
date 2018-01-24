@@ -48,12 +48,23 @@
 
 <header class="page-header">
   <div class="container">
+    <section class="parallax">
+      <svg class="parallax__element"></svg>
+    </section>
     <section class="slider">
+      <input type="radio" class="slider__input" id="slide1" name="slider">
+      <input type="radio" class="slider__input" id="slide2" name="slider">
+      <input type="radio" class="slider__input" id="slide3" name="slider">
       <div class="slider__page slider__page--first">
         <fieldset class="slider__title">
           <legend class="slider__heading">We make music beautiful and enjoyable</legend>
-          <cite class="slider__author">Kayne West, Singer & Founder</cite>
+          <cite class="slider__author">Kayne West, Singer &amp; Founder</cite>
         </fieldset>
+      </div>
+      <div class="slider__controls">
+        <label class="slider__control" for="slide1"></label>
+        <label class="slider__control" for="slide2"></label>
+        <label class="slider__control" for="slide3"></label>
       </div>
     </section>
   </div>
