@@ -52,9 +52,9 @@
       <svg class="parallax__element"></svg>
     </section>
     <section class="slider">
-      <input type="radio" class="slider__input" id="slide1" name="slider">
-      <input type="radio" class="slider__input" id="slide2" name="slider">
-      <input type="radio" class="slider__input" id="slide3" name="slider">
+      <input class="slider__input" type="radio"  id="slide1" name="slider">
+      <input class="slider__input" type="radio"  id="slide2" name="slider">
+      <input class="slider__input" type="radio"  id="slide3" name="slider">
       <div class="slider__page slider__page--first">
         <fieldset class="slider__heading">
           <legend class="slider__quote">We make music beautiful and enjoyable</legend>
@@ -72,6 +72,7 @@
     </div>
   </div>
 </header>
+
 <main class="page-content">
   <div class="container">
     <section class="about">
@@ -79,7 +80,53 @@
       <p class="about__subtitle">It was during a winter season that the idea of Duotone was conceived. Lewis had called in John to sing a jingle for him.</p>
       <p class="about__desc">The restless Lewis began crooning something while strumming on his guitar, John felt inspired to jam with an alaap, and the result: the seamless fusion of Eastern and Western sounds that has become the quintessential characteristic of the Raaga.</p>
     </section>
-    
+    <section class="team">
+      <div class="container">
+        <h1 class="team__title">Rocking Team</h1>
+        <p class="team__subtitle">We are singers and musicians from the different part of the world united to make wonderful music experiences for everyone in the world.</p>
+        <div class="team__slider">
+          <input class="team__input" type="radio"  id="team1" name="team">
+          <input class="team__input" type="radio"  id="team2" name="team">
+          <input class="team__input" type="radio"  id="team3" name="team">
+          <button class="team__button team__button--prev"></button>
+          <div class="team__pics">
+            <a href="#" class="team__link">
+              <figure class="team__pic">
+                <img class="team__img" src="img/team-1.jpg" alt="Roy Gutierrez" width="360" height="438">
+                <figcaption class="team__caption">
+                  <span class="team__name">Roy Gutierrez</span>
+                  <span class="team__category">The Guitarist</span>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="#" class="team__link">
+              <figure class="team__pic">
+                <img class="team__img" src="img/team-2.jpg" alt="Hannah Valdez" width="360" height="438">
+                <figcaption class="team__caption">
+                  <span class="team__name">Hannah Waldez</span>
+                  <span class="team__category">Female Singer</span>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="#" class="team__link">
+              <figure class="team__pic">
+                <img class="team__img" src="img/team-2.jpg" alt="Philip Lucas" width="360" height="438">
+                <figcaption class="team__caption">
+                  <span class="team__name">Philip Lucas</span>
+                  <span class="team__category">Rock Singer</span>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <button class="team__button team__button--next"></button>
+          <div class="team__controls">
+            <label class="team__control" for="team1"></label>
+            <label class="team__control" for="team2"></label>
+            <label class="team__control" for="team3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </main>
 
