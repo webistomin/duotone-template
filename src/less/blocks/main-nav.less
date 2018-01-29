@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
 
   &__list {
@@ -31,6 +31,28 @@
     display: block;
     background-color: transparent;
     border: none;
+
+    &--opened span {
+      &:nth-child(1) {
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin-bottom: -10px;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        margin-bottom: -10px;
+      }
+    }
   }
 
   &__toggler span {
@@ -39,6 +61,10 @@
     height: 2px;
     margin-bottom: 6px;
     background-color: @color-text;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
