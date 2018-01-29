@@ -1,7 +1,6 @@
 .main-nav {
   position: fixed;
   padding-top: 15px;
-  padding-bottom: 15px;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,20 +11,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
   }
 
   &__list {
-    margin-top: 15px;
+    max-height: 384px;
+    overflow-y: scroll;
     background-color: @color-nav--dark;
     margin-left: -15px;
     margin-right: -15px;
 
+
     &--opened {
-      display: block;
+      opacity: 1;
+      height: auto;
+      transition: all 1s ease-out;
     }
 
     &--closed {
-      display: none;
+      transition: all 1s ease-out;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
     }
   }
 
