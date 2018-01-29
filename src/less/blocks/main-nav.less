@@ -27,18 +27,51 @@
     vertical-align: top;
   }
 
-  &__toggler {
+  &__toggler span {
+    position: absolute;
     display: block;
+    width: 29px;
+    height: 2px;
+    background-color: @color-text;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 8px;
+    }
+
+    &:nth-child(3) {
+      top: 17px;
+    }
+  }
+
+  &__toggler {
+    width: 29px;
+    height: 19px;
+    display: block;
+    padding: 0;
+    position: relative;
     background-color: transparent;
     border: none;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    outline: transparent;
 
     &--opened span {
       &:nth-child(1) {
+        top: 10px;
         -webkit-transform: rotate(135deg);
         -moz-transform: rotate(135deg);
         -o-transform: rotate(135deg);
         transform: rotate(135deg);
-        margin-bottom: -10px;
       }
 
       &:nth-child(2) {
@@ -46,26 +79,15 @@
       }
 
       &:nth-child(3) {
+        top: 10px;
         -webkit-transform: rotate(-135deg);
         -moz-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
-        margin-bottom: -10px;
       }
     }
   }
 
-  &__toggler span {
-    display: block;
-    width: 29px;
-    height: 2px;
-    margin-bottom: 6px;
-    background-color: @color-text;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 
   &__link {
     font-family: 'Montserrat', sans-serif;
