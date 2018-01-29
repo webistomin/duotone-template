@@ -24,15 +24,15 @@
 
     &--opened {
       opacity: 1;
-      height: auto;
-      transition: all 1s ease-out;
+      min-height: auto;
+      transition: 0.5s ease-in-out;
     }
 
     &--closed {
-      transition: all 1s ease-out;
       opacity: 0;
-      height: 0;
+      max-height: 0;
       overflow: hidden;
+      transition: 0.5s ease-in-out;
     }
   }
 
