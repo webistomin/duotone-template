@@ -15,7 +15,18 @@
   }
 
   &__list {
-    display: none;
+    margin-top: 15px;
+    background-color: @color-nav--dark;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    &--opened {
+      display: block;
+    }
+
+    &--closed {
+      display: none;
+    }
   }
 
   &__pic {
@@ -90,9 +101,20 @@
 
 
   &__link {
+    display: block;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: @font-size--tiny;
     line-height: @line-height--medium;
+    text-transform: uppercase;
+
+    &:hover {
+      color: @color-link--hover;
+    }
+
+    &:active {
+      color: darken(@color-link--hover, 20%);
+    }
   }
 }
