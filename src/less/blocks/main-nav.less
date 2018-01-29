@@ -1,3 +1,50 @@
 .main-nav {
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: @color-nav;
 
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__pic {
+    display: block;
+    text-align: left;
+  }
+
+  &__logo {
+    vertical-align: top;
+  }
+
+  &__toggler {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__toggler span {
+    display: block;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 6px;
+    background-color: @color-text;
+  }
+
+  &__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: @font-size--tiny;
+    line-height: @line-height--medium;
+  }
 }
