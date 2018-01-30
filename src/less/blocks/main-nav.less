@@ -142,13 +142,17 @@
 
     &--opened {
       .main-nav__decor {
-        transform: rotate(120deg);
+        transform: rotate(-135deg);
         transition: 0.25s ease-in-out;
+        margin-bottom: -10px;
+        margin-top: 0;
       }
     }
 
     &--closed {
       .main-nav__decor {
+        margin-top: -10px;
+        margin-bottom: 0;
         transform: rotate(45deg);
         transition: 0.25s ease-in-out;
       }
@@ -166,6 +170,7 @@
     border-right: 2px solid @color-text;
     border-bottom:2px solid @color-text;
     transform: rotate(45deg);
+    transition: 0.25s ease-in-out;
   }
 
   &__dropdown {
