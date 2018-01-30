@@ -114,8 +114,10 @@
 
 
   &__link {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: @font-size--tiny;
@@ -124,10 +126,33 @@
 
     &:hover {
       color: @color-link--hover;
+
+      .main-nav__decor {
+        border-color: @color-link--hover;
+      }
     }
 
     &:active {
       color: darken(@color-link--hover, 20%);
+
+      .main-nav__decor {
+        border-color: darken(@color-link--hover, 20%);
+      }
     }
   }
+
+  &__decor {
+    margin-top: -10px;
+    margin-left: 10px;
+    width: 13px;
+    height: 14px;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    border-right: 2px solid @color-text;
+    border-bottom:2px solid @color-text;
+    transform: rotate(45deg);
+  }
+
+
 }
