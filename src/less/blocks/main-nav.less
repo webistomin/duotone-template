@@ -139,6 +139,20 @@
         border-color: darken(@color-link--hover, 20%);
       }
     }
+
+    &--opened {
+      .main-nav__decor {
+        transform: rotate(120deg);
+        transition: 0.25s ease-in-out;
+      }
+    }
+
+    &--closed {
+      .main-nav__decor {
+        transform: rotate(45deg);
+        transition: 0.25s ease-in-out;
+      }
+    }
   }
 
   &__decor {
@@ -152,6 +166,18 @@
     border-right: 2px solid @color-text;
     border-bottom:2px solid @color-text;
     transform: rotate(45deg);
+  }
+
+  &__dropdown {
+    background-color: @color-dropdown;
+
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: block;
+    }
   }
 
 
