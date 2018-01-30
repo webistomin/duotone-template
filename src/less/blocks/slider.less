@@ -1,3 +1,31 @@
 .slider {
-  padding-top: 300px;
+  padding-top: 120px;
+
+  &__input {
+    display: none;
+  }
+
+  &__heading {
+    text-align: center;
+    border: none;
+  }
+
+  &__quote {
+    font-size: @font-size--slider;
+    font-weight: 700;
+  }
+
+  &__author {
+    position: relative;
+    font-size: @font-size--medium;
+    font-style: normal;
+
+    &::before {
+      content: "—";
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+    }
+  }
 }
