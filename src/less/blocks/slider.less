@@ -34,13 +34,14 @@
 
   &__page {
     margin-bottom: 35px;
+    cursor: grab;
   }
 
   &__controls {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 72px;
+    justify-content: center;
+    min-width: 72px;
     margin: 0 auto;
     margin-bottom: 35px;
   }
@@ -49,12 +50,18 @@
     display: block;
     width: 15px;
     height: 15px;
+    margin-right: 12px;
     border-radius: 50%;
     background-color: @color-text;
     opacity: 0.5;
+    cursor: pointer;
 
     &--active {
       opacity: 1;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
