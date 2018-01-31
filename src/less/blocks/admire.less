@@ -1,0 +1,31 @@
+.admire {
+  &__play {
+    position: relative;
+  }
+
+  &__playbtn {
+    display: block;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 7px solid @color-text;
+    border-radius: 50%;
+    outline: transparent;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    &::before {
+      position: absolute;
+      content: "►";
+      color: @color-text;
+      top: 48%;
+      left: 54%;
+      transform: translateY(-50%) translateX(-50%);
+      font-size: 40px;
+    }
+  }
+}
