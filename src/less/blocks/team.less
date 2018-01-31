@@ -28,4 +28,77 @@
     font-weight: 700;
     color: @color-text;
   }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__link {
+    &:nth-child(n+2) {
+      display: none;
+    }
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    display: block;
+    font-size: @font-size--medium;
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    color: @color-text;
+  }
+
+  &__category {
+    display: block;
+    font-size: @font-size--small;
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    color: @color-text;
+    opacity: 0.54;
+  }
+
+  &__button {
+    position: relative;
+    padding: 0;
+    width: 10px;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+
+    &--prev {
+      &::before {
+        position: absolute;
+        content: "←";
+        width: 25px;
+        height: 25px;
+        left: -22px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--next {
+      &::before {
+        position: absolute;
+        content: "→";
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__pic {
+    max-width: 260px;
+    margin: 0;
+  }
 }
