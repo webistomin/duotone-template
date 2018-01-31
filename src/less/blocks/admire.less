@@ -37,6 +37,7 @@
 
   &__text {
     padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #fcfcfc;
@@ -77,5 +78,35 @@
     font-weight: 400;
     color: @color-text--dark;
     font-size: @font-size--small;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  &__btn {
+    display: block;
+    box-sizing: border-box;
+    width: 272px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @color-text;
+    font-size: @font-size--small;
+    line-height: @line-height--medium;
+    border-radius: 30px;
+
+    &--purple {
+      background-color: @color-h2;
+      margin-bottom: 10px;
+    }
+
+    &--yellow {
+      background-color: #f8cd28;
+    }
   }
 }
