@@ -1,4 +1,10 @@
 .admire {
+  text-align: center;
+
+  &__img {
+    vertical-align: top;
+  }
+
   &__play {
     position: relative;
   }
@@ -27,5 +33,22 @@
       transform: translateY(-50%) translateX(-50%);
       font-size: 40px;
     }
+  }
+
+  &__text {
+    padding-top: 50px;
+    background-color: #fcfcfc;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    color: @color-h2;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    font-size: @font-size--small;
+    color: #e9add1;
+    margin: 0;
   }
 }
