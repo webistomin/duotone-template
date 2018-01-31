@@ -37,6 +37,8 @@
 
   &__text {
     padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #fcfcfc;
   }
 
@@ -50,5 +52,28 @@
     font-size: @font-size--small;
     color: #e9add1;
     margin: 0;
+  }
+
+  &__stars {
+    width: 124px;
+    display: flex;
+    justify-content: space-between;
+    color: @color-text--dark;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  &__star {
+    color: #f8cd28;
+
+    &:last-child {
+      color: #cccccc;
+    }
+  }
+
+  &__desc {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    color: @color-text--dark;
   }
 }
