@@ -1,4 +1,6 @@
 .quotes {
+  padding-top: 150px;
+  padding-bottom: 50px;
   background-image: url("../img/background-bg-03.jpg");
   background-size: cover;
   text-align: center;
@@ -10,9 +12,52 @@
   }
 
   &__slide {
+    position: relative;
     font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
     font-weight: 700;
-    font-size: @font-size--medium;
+    font-size: 30px;
     color: @color-quote;
+
+    &::before {
+      content: "“";
+      position: absolute;
+      color: @color-quote;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 200px;
+      line-height: 0;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 72px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-top: 50px;
+  }
+
+  &__control {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: @color-quote;
+    opacity: 0.3;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    &--active {
+      opacity: 1;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
