@@ -1,0 +1,126 @@
+.events {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-image: url("../img/background-bg-04.jpg");
+  background-size: cover;
+  text-align: center;
+
+  &__title {
+    display: inline-block;
+    margin: 0;
+    color: @color-events;
+    margin-bottom: 30px;
+
+    &::after {
+      background-color: @color-events;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: @font-size--medium;
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    color: @color-text;
+  }
+
+  &__event {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: @color-text;
+    font-size: @font-size--medium;
+    line-height: @line-height--small;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: @font-size--medium;
+    line-height: @line-height--small;
+    color: @color-events;
+  }
+
+  &__desc {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: @font-size--small;
+    line-height: @line-height--small;
+    color: @color-text;
+    opacity: 0.54;
+  }
+
+  &__place {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__city {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    color: @color-text;
+    font-size: @font-size--small;
+    line-height: @line-height--small;
+  }
+
+  &__country {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: @font-size--tiny;
+    line-height: @line-height--small;
+    color: @color-text;
+    opacity: 0.54;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 164px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @color-text;
+    font-size: @font-size--small;
+    line-height: @line-height--medium;
+    border-radius: 30px;
+    background-color: @color-btn--purple;
+
+    &--disabled {
+      cursor: not-allowed;
+      background-color: #cdcdcd;
+      color: #8f8f8f;
+    }
+  }
+
+  
+}
