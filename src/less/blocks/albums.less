@@ -29,15 +29,17 @@
   }
 
   &__pics {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__pic {
     margin: 0;
-    max-width: 360px;
+    max-width: 230px;
 
-    &:nth-child(n+2) {
+    &:nth-of-type(n+2) {
       display: none;
     }
   }
@@ -141,35 +143,20 @@
   }
 
   &__button {
-    position: absolute;
-    padding: 0;
-    width: 10px;
+    display: block;
+    width: 46px;
+    height: 18px;
     border: none;
     background-color: transparent;
-    outline: transparent;
-    left: -22px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #434248;
 
     &--prev {
-      &::before {
-        position: absolute;
-        content: "←";
-        width: 25px;
-        height: 25px;
-      }
+      background-image: url("../img/arrow-l--black.png");
     }
 
     &--next {
-      &::before {
-        position: absolute;
-        content: "→";
-        width: 25px;
-        height: 25px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
+      background-image: url("../img/arrow-r--black.png");
     }
   }
+
+
 }
