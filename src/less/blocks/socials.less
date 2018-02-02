@@ -1,0 +1,42 @@
+.socials {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &::before {
+    width: 149px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    background-image: url("../img/shape-line.png");
+  }
+
+  &::after {
+    width: 149px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    background-image: url("../img/shape-line.png");
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 380px;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    background-color: #d0b1c3;
+    border-radius: 50%;
+  }
+}
