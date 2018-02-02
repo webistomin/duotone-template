@@ -1,8 +1,6 @@
 .team {
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: -15px;
   margin-right: -15px;
   background-image: url(../img/backgroung-bg-02.jpg);
@@ -40,7 +38,7 @@
   }
 
   &__link {
-    &:nth-child(n+2) {
+    &:nth-of-type(n+2) {
       display: none;
     }
   }
@@ -67,44 +65,35 @@
     opacity: 0.54;
   }
 
-  &__button {
-    position: relative;
-    padding: 0;
-    width: 10px;
-    border: none;
-    background-color: transparent;
-    outline: transparent;
-
-    &--prev {
-      &::before {
-        position: absolute;
-        content: "←";
-        width: 25px;
-        height: 25px;
-        left: -22px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-
-    &--next {
-      &::before {
-        position: absolute;
-        content: "→";
-        width: 25px;
-        height: 25px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-
   &__img {
     vertical-align: top;
   }
 
   &__pic {
-    max-width: 260px;
+    max-width: 200px;
     margin: 0;
+  }
+
+  &__pics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    display: block;
+    width: 34px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+
+    &--prev {
+      background-image: url("../img/arrow-l.png");
+    }
+
+    &--next {
+      background-image: url("../img/arrow-r.png");
+    }
   }
 }
