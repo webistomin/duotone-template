@@ -69,5 +69,38 @@
     }
   }
 
+  &__widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 220px;
+    height: 220px;
+    display: block;
+    background-image: url("../img/twitter-placeholder.png");
+    cursor: grab;
+
+    &:nth-child(n+2) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    width: 21px;
+    height: 41px;
+    border: none;
+    background-color: transparent;
+
+    &--prev {
+      background-image: url("../img/arrow-left.png");
+    }
+
+    &--next {
+      background-image: url("../img/arrow-right.png");
+    }
+  }
+
 
 }
