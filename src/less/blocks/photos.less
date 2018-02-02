@@ -1,0 +1,43 @@
+.photos {
+  background-color: #ececec;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  &__title {
+    display: inline-block;
+    margin: 0;
+    color: @color-text--dark;
+    margin-bottom: 30px;
+
+    &::after {
+      background-color: @color-text--dark;
+      opacity: 0.3;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__cell {
+    display: block;
+    width: 260px;
+    height: 260px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 260px;
+    height: 260px;
+  }
+}
