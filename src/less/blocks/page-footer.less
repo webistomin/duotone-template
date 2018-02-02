@@ -3,4 +3,67 @@
   padding-bottom: 50px;
   background-image: url("../img/background-bg-07.jpg");
   text-align: center;
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name,
+  &__number {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: @font-size--small;
+    line-height: @line-height--small;
+  }
+
+  &__zipcode,
+  &__mail {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #aa96b9;
+    font-size: @font-size--tiny;
+    line-height: @line-height--small;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__links {
+    position: relative;
+    padding-bottom: 70px;
+
+    &::after {
+      width: 149px;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      background-image: url("../img/shape-line.png");
+    }
+  }
+
+  &__copyright {
+    padding-top: 50px;
+  }
+
+  &__rights {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    color: @color-text;
+    font-size: @font-size--tiny;
+    line-height: @line-height--small;
+  }
+
+  &__author {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #aa96b9;
+    font-size: @font-size--tiny;
+    line-height: @line-height--small;
+  }
 }
