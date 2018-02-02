@@ -16,7 +16,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     font-size: @font-size--medium;
     font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
     font-weight: 700;
@@ -24,13 +24,16 @@
   }
 
   &__btns {
+    max-width: 452px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   &__btn {
     display: block;
-    width: 120px;
+    width: 50%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -53,5 +56,84 @@
       border-top-left-radius: initial;
       border-bottom-left-radius: initial;
     }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__playbtn {
+    display: block;
+    padding: 0;
+    width: 46px;
+    height: 46px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    outline: transparent;
+    background-color: transparent;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      position: absolute;
+      content: "►";
+      color: #ffffff;
+      top: 48%;
+      left: 54%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+      font-size: 20px;
+    }
+  }
+
+  &__desc {
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 700;
+    color: @color-text;
+    font-size: @font-size--medium;
+    line-height: @line-height--small;
+  }
+
+  &__author {
+    font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
+    font-weight: 400;
+    color: @color-text;
+    opacity: 0.54;
+    font-size: @font-size--small;
+    line-height: @line-height--small;
+  }
+
+  &__buybtn {
+    display: block;
+    width: 164px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @color-text--dark;
+    font-size: @font-size--tiny;
+    line-height: @line-height--medium;
+    border-radius: 30px;
+    background-color: @color-text;
   }
 }
