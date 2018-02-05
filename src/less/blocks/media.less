@@ -58,6 +58,10 @@
     }
   }
 
+  &__list {
+    margin-bottom: 50px;
+  }
+
   &__item {
     position: relative;
     display: flex;
@@ -66,6 +70,10 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__desc {
@@ -135,5 +143,13 @@
     line-height: @line-height--medium;
     border-radius: 30px;
     background-color: @color-text;
+  }
+
+  @media @screen-xs {
+
+    &__subtitle {
+      font-size: 31px;
+      margin-bottom: 30px;
+    }
   }
 }
