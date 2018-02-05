@@ -96,6 +96,36 @@
     }
   }
 
+  &__controls {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 72px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  &__control {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: @color-text;
+    opacity: 0.3;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    &--active {
+      opacity: 1;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   @media @screen-xs {
 
     &__subtitle {
