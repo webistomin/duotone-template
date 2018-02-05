@@ -1,5 +1,5 @@
 .slider {
-  padding-top: 120px;
+  padding-top: 150px;
 
   &__input {
     display: none;
@@ -62,6 +62,12 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  @media @screen-xs {
+    &__quote {
+      font-size: @font-size--big;
     }
   }
 }
