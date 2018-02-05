@@ -1,0 +1,62 @@
+.player {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 100;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    padding: 18px 20px;
+  }
+
+  &__time {
+    display: none;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__buttons {
+    display: none;
+  }
+
+  &__hide {
+    display: none;
+  }
+
+  &__controls {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__control {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 22px; //15
+
+    &--play {
+      position: relative;
+      width: 50px;
+
+      &::before {
+        width: 35px; //50
+        height: 35px; //50
+        box-sizing: border-box;
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+        border: 2px solid @color-text;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+}
