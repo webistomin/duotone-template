@@ -7,6 +7,10 @@
   background-color: #000000;
   z-index: 100;
 
+  &:hover &__hide {
+    display: block;
+  }
+
   &__inner {
     display: flex;
     flex-direction: row;
@@ -29,6 +33,15 @@
 
   &__hide {
     display: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    position: absolute;
+    top: -17px;
+    right: 0;
+    background-color: #333333;
+    color: #CCCCCC;
   }
 
   &__controls {
