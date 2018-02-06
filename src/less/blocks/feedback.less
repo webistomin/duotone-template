@@ -70,7 +70,6 @@
     font-family: 'PlayfairDisplay', 'Roboto Slab', serif;
     font-weight: 400;
     font-size: @font-size--small;
-    line-height: @line-height--medium;
     color: @color-form;
     resize: none;
     margin-bottom: 30px;
@@ -109,6 +108,27 @@
 
     &__subtitle {
       font-size: 31px;
+    }
+  }
+
+  @media @screen-sm {
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      max-width: 664px;
+    }
+
+    &__inputs {
+      display: flex;
+    }
+
+    &__input {
+      &:nth-child(2) {
+        border-top: 3px solid @color-form;
+        border-left: none;
+      }
     }
   }
 }
