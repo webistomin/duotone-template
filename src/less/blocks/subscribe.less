@@ -68,5 +68,21 @@
     border: none;
   }
 
+  @media @screen-sm {
 
+    &__form {
+      max-width: 664px;
+    }
+
+    &__inputs {
+      display: flex;
+    }
+
+    &__input {
+      &:nth-child(2) {
+        border-top: 3px solid @color-text;
+        border-left: none;
+      }
+    }
+  }
 }
