@@ -14,7 +14,7 @@
   &__inner {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     padding: 18px 20px;
   }
@@ -102,5 +102,32 @@
     width: 18px;
     background: #ffffff;
     border-radius: 50%;
+  }
+
+  @media @screen-sm {
+
+    &__time {
+      display: block;
+      margin-left: 34px;
+      font-size: 12px;
+      color: #979797;
+
+      &--margin {
+        margin-left: 20px;
+        margin-right: 25px;
+      }
+    }
+
+    &__duration {
+      display: block;
+      font-size: 12px;
+      color: #979797;
+    }
+
+    &__buttons {
+      display: flex;
+      width: 114px;
+      justify-content: space-between;
+    }
   }
 }
