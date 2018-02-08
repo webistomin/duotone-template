@@ -14,9 +14,9 @@
   &__inner {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    padding: 18px 20px;
+    padding: 8px 20px;
   }
 
   &__time {
@@ -48,30 +48,28 @@
     width: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__control {
     padding: 0;
     border: none;
     background-color: transparent;
-    width: 22px; //15
+    width: 15px;
+    height: 18px;
 
     &--play {
-      position: relative;
       width: 50px;
+      height: 50px;
+      background-image: url("../img/icon-play.png");
+    }
 
-      &::before {
-        width: 35px; //50
-        height: 35px; //50
-        box-sizing: border-box;
-        position: absolute;
-        content: "";
-        border-radius: 50%;
-        border: 2px solid @color-text;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-      }
+    &--prev {
+      background-image: url("../img/icon-prev.png");
+    }
+
+    &--next {
+      background-image: url("../img/icon-next.png");
     }
   }
 
