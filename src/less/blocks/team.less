@@ -204,4 +204,43 @@
       }
     }
   }
+
+  @media @screen-lg {
+    overflow: hidden;
+
+    &__pics {
+      position: relative;
+    }
+
+    &__pic {
+      max-width: 360px;
+    }
+
+    &__button {
+      position: absolute;
+      margin: 0 !important;
+
+      &--prev {
+        left: -50px;
+      }
+
+      &--next {
+        right: -50px;
+        margin: 0;
+      }
+    }
+
+    &__link {
+      margin: 0 !important;
+
+
+      &:nth-of-type(2n+2) {
+        margin: 0;
+      }
+
+      &:first-of-type {
+        margin: 0;
+      }
+    }
+  }
 }
