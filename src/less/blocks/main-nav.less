@@ -90,6 +90,10 @@
     transition: 0.25s ease-in-out;
     outline: transparent;
 
+    &--desktop {
+      display: none;
+    }
+
     &--opened span {
       &:nth-child(1) {
         top: 10px;
@@ -190,6 +194,47 @@
       opacity: 1;
       min-height: auto;
       transition: 0.5s ease-in-out;
+    }
+  }
+
+  @media @screen-lg {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__toggler {
+      display: none;
+
+      &--desktop {
+        display: block;
+      }
+    }
+
+    &__inner {
+      padding-bottom: 0;
+    }
+
+    &__list {
+      display: flex;
+      max-height: initial;
+      overflow: auto;
+      background-color: transparent;
+      margin: 0;
+      opacity: 1;
+    }
+
+    &__item {
+      margin-right: 40px;
+    }
+
+    &__link {
+      line-height: initial;
+    }
+
+    &__dropdown {
+      display: none;
     }
   }
 
