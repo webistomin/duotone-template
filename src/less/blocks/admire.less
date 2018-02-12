@@ -1,5 +1,6 @@
 .admire {
   text-align: center;
+  background-color: #fcfcfc;
 
   &__img {
     vertical-align: bottom;
@@ -46,7 +47,7 @@
     padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #fcfcfc;
+
   }
 
   &__title {
@@ -151,12 +152,21 @@
     }
   }
 
+
   @media @screen-lg {
     display: flex;
     justify-content: flex-start;
     text-align: left;
     position: relative;
     overflow: hidden;
+
+    &__title {
+      max-width: 610px;
+    }
+
+    &__desc {
+      max-width: 610px;
+    }
 
     &__text {
       padding-top: 100px;
@@ -166,12 +176,18 @@
 
     &__subtitle {
       margin-bottom: 10px;
+      max-width: 610px;
     }
 
     &__btn {
       text-align: center;
 
       &--purple {
+        margin: 0;
+        margin-right: 16px;
+      }
+
+      &--green {
         margin: 0;
         margin-right: 16px;
       }
@@ -192,9 +208,7 @@
 
     &__text {
       box-sizing: border-box;
-      width: -webkit-calc(100% - 689px);
-      width: -moz-calc(100% - 689px);
-      width: calc(100% - 689px);
+
     }
   }
 }
