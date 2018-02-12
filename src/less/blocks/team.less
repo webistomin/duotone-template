@@ -206,7 +206,19 @@
   }
 
   @media @screen-lg-min {
-    overflow: hidden;
+    &__button {
+      &--next,
+      &--prev {
+        margin: 0;
+      }
+    }
+
+    &__link {
+      margin: 0;
+    }
+  }
+
+  @media @screen-lg {
 
     &__link {
       position: relative;
@@ -230,7 +242,7 @@
 
     &__button {
       position: absolute;
-      margin: 0 !important;
+      margin: 0;
 
       &--prev {
         left: -48px;
@@ -243,7 +255,7 @@
     }
 
     &__link {
-      margin: 0 !important;
+      margin: 0;
 
 
       &:nth-of-type(2n+2) {
@@ -254,5 +266,6 @@
         margin: 0;
       }
     }
+
   }
 }

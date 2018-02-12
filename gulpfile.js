@@ -31,7 +31,7 @@ gulp.task("style", function() {
         "last 2 Edge versions"
       ]}),
       mqpacker({
-        sort: false
+        sort: true
       })
     ]))
     .pipe(gulp.dest("build/css"))
@@ -61,7 +61,7 @@ gulp.task("svgmin", function() {
   return gulp.src("build/img/**/*.svg")
     .pipe(svgmin())
     .pipe(gulp.dest("build/img"));
-})
+});
 
 gulp.task("symbols", function() {
   return gulp.src("build/img/*.svg")
