@@ -57,4 +57,35 @@
       font-size: 72px;
     }
   }
+
+  @media @screen-lg {
+
+
+    &__grid {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    &__cell {
+      float: left;
+      margin: 0 100px 0 0;
+      transform: rotate(-45deg);
+      width: 184px;
+      height: 184px;
+
+      &--margin {
+        margin: 0px 100px 0 142px;
+      }
+    }
+
+    &__img {
+      transform: rotate(45deg);
+      min-width: 150%;
+      position: relative;
+      left: -42px;
+      top: -42px;
+    }
+
+  }
 }
